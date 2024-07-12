@@ -19,4 +19,3 @@ Ocean and Maritime Economy
 - DataStore: Data persistence library that ensures data continuity across app restarts or device reboots, preserving application state and user preferences.
 - Coroutines: Asynchronous programming library that enables non-blocking, suspendable code execution, enhancing performance and responsiveness.
 - Glide: Image loading and caching library that efficiently manages image retrieval and storage, optimizing app performance.
-# Bangkit-Capstone-Project-Bloomy-Android-Application
