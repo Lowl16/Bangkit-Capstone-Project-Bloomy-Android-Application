@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".ui.activity.ShopActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/material_tool_bar_shop"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingEnd="0dp"
+            android:paddingStart="5dp"
+            android:background="@color/blue_500"
+            app:title="@string/title_my_shop"
+            app:titleTextColor="@color/off_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_shop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/blue_500"
+        app:civ_border_color="@color/off_white"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout_shop" />
+
+    <TextView
+        android:id="@+id/tv_name_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_name_shop"
+        android:textColor="@color/off_white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/img_shop"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout_shop" />
+
+    <ImageView
+        android:id="@+id/img_email_shop"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="2.5dp"
+        android:contentDescription="@string/img_email_shop"
+        android:src="@drawable/icon_email_white"
+        app:layout_constraintStart_toStartOf="@id/tv_name_shop"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_shop"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_email_shop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_regular"
+        android:maxLines="1"
+        android:text="@string/tv_email_shop"
+        android:textColor="@color/off_white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_email_shop"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_shop"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_location_shop"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="7.5dp"
+        android:contentDescription="@string/img_location_shop"
+        android:src="@drawable/icon_location_white"
+        app:layout_constraintStart_toStartOf="@id/img_email_shop"
+        app:layout_constraintTop_toBottomOf="@id/img_email_shop" />
+
+    <TextView
+        android:id="@+id/tv_location_shop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_regular"
+        android:maxLines="1"
+        android:text="@string/tv_location_shop"
+        android:textColor="@color/off_white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_location_shop"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_shop"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_bottom_sheet_shop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/img_bottom_sheet_shop"
+        android:src="@drawable/template_bottom_sheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_shop" />
+    
+    <TextView
+        android:id="@+id/tv_product_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_product_shop"
+        android:textColor="@color/gray_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_bottom_sheet_shop" />
+
+    <ImageView
+        android:id="@+id/img_display_product_shop"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/img_display_product_shop"
+        android:src="@drawable/icon_display_grid"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_display_product_shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_display_product_shop" />
+
+    <TextView
+        android:id="@+id/tv_display_product_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_display_product_shop"
+        android:textColor="@color/blue_500"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/img_display_product_shop"
+        app:layout_constraintBottom_toBottomOf="@id/tv_product_shop"
+        app:layout_constraintTop_toTopOf="@id/tv_product_shop" />
+
+    <ImageView
+        android:id="@+id/img_content_divider_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/img_content_divider_add_product"
+        android:src="@drawable/template_content_divider"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/btn_add_product_content_description"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/btn_add_product"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/blue_500"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/icon_add_product"
+        app:iconGravity="textStart"
+        app:rippleColor="@color/ripple_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_product_shop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@id/img_content_divider_add_product"
+        app:layout_constraintEnd_toEndOf="@id/img_display_product_shop"
+        app:layout_constraintStart_toStartOf="@id/tv_product_shop"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_shop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

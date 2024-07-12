@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="147.5dp"
+    android:layout_marginBottom="25dp"
+    android:layout_marginHorizontal="25dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_transaction"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/image_person"
+            app:civ_border_color="@color/blue_500"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_user_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_user_transaction"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_user_transaction"
+            app:layout_constraintStart_toEndOf="@id/img_user_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_user_transaction" />
+
+        <ImageView
+            android:id="@+id/img_status_transaction"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/img_status_transaction"
+            android:src="@drawable/template_status_container"
+            app:layout_constraintStart_toStartOf="@id/tv_title_transaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_status_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_status_transaction"
+            android:textColor="@color/off_white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_status_transaction"
+            app:layout_constraintEnd_toEndOf="@id/img_status_transaction"
+            app:layout_constraintStart_toStartOf="@id/img_status_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_status_transaction"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/img_product_transaction"
+            android:layout_width="130dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="7.5dp"
+            android:background="@drawable/template_image_product_rounded"
+            android:clipToOutline="true"
+            android:contentDescription="@string/img_product_transaction"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@id/tv_user_transaction"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_transaction"
+            tools:src="@tools:sample/backgrounds/scenic"
+            tools:targetApi="s" />
+
+        <ImageView
+            android:id="@+id/img_grade_transaction"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/img_grade_transaction"
+            android:src="@drawable/template_circle_blue"
+            app:layout_constraintStart_toEndOf="@id/img_product_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_product_transaction" />
+
+        <TextView
+            android:id="@+id/tv_grade_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_grade_transaction"
+            android:textColor="@color/off_white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_grade_transaction"
+            app:layout_constraintEnd_toEndOf="@id/img_grade_transaction"
+            app:layout_constraintStart_toStartOf="@id/img_grade_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_grade_transaction" />
+
+        <TextView
+            android:id="@+id/tv_title_transaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7.5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1"
+            android:text="@string/tv_title_transaction"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_grade_transaction"
+            app:layout_constraintTop_toTopOf="@id/tv_grade_transaction" />
+
+        <TextView
+            android:id="@+id/tv_price_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_price_transaction"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/img_grade_transaction"
+            app:layout_constraintTop_toBottomOf="@id/img_grade_transaction" />
+
+        <ImageView
+            android:id="@+id/img_delivery_method_transaction"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/img_delivery_method_transaction"
+            android:src="@drawable/template_transaction_container"
+            app:layout_constraintStart_toStartOf="@id/tv_price_transaction"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_transaction" />
+
+        <TextView
+            android:id="@+id/tv_delivery_method_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_delivery_method_transaction"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_delivery_method_transaction"
+            app:layout_constraintEnd_toEndOf="@id/img_delivery_method_transaction"
+            app:layout_constraintStart_toStartOf="@id/img_delivery_method_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_delivery_method_transaction" />
+
+        <ImageView
+            android:id="@+id/img_quantity_transaction"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/img_quantity_transaction"
+            android:src="@drawable/template_transaction_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_delivery_method_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_delivery_method_transaction" />
+
+        <TextView
+            android:id="@+id/tv_quantity_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_quantity_transaction"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_quantity_transaction"
+            app:layout_constraintEnd_toEndOf="@id/img_quantity_transaction"
+            app:layout_constraintStart_toStartOf="@id/img_quantity_transaction"
+            app:layout_constraintTop_toTopOf="@id/img_quantity_transaction" />
+
+        <TextView
+            android:id="@+id/tv_total_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_total_transaction"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

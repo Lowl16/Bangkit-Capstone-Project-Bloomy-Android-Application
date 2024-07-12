@@ -1,0 +1,792 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Bloomy</string>
+
+    <!-- SplashActivity -->
+    <string name="img_logo_bloomy_splash">Image Logo Bloomy Splash</string>
+
+    <!-- HomeActivity -->
+    <string name="img_background_home">Image Background Home</string>
+    <string name="btn_get_started_home">Get Started</string>
+    <string name="tv_title_home">Sail into the\nSea\'s Splendor</string>
+    <string name="tv_subtitle_home">Let the Waves of\nInnovation Echo\nthe Melody of\nMaritime Prosperity</string>
+
+    <!-- SignInActivity -->
+    <string name="img_logo_bloomy_sign_in">Image Logo Bloomy Sign In</string>
+    <string name="img_bottom_sheet_sign_in">Image Bottom Sheet Sign In</string>
+    <string name="btn_forgot_password">Forgot Password?</string>
+    <string name="et_hint_email_sign_in">example@gmail.com</string>
+    <string name="et_hint_password_sign_in">••••••••</string>
+    <string name="tv_title_sign_in">Sign In</string>
+    <string name="tv_subtitle_sign_in">Sign in to your account</string>
+    <string name="tv_email_sign_in">Email</string>
+    <string name="tv_password_sign_in">Password</string>
+    <string name="tv_sign_up_hint">Don\’t have an account?</string>
+
+    <!-- ForgotPassword -->
+    <string name="tv_forgot_password_dialog">Forgot Password</string>
+    <string name="tv_description_forgot_password_dialog">Please provide the email\naddress that you used when you\nsigned up for your account</string>
+    <string name="et_hint_email_forgot_password_dialog">example@gmail.com</string>
+
+    <!-- SignUpActivity -->
+    <string name="img_bottom_sheet_sign_up">Image Bottom Sheet Sign Up</string>
+    <string name="btn_resend_verification">Resend Link</string>
+    <string name="et_hint_username_sign_up">example</string>
+    <string name="et_hint_email_sign_up">example@gmail.com</string>
+    <string name="et_hint_password_sign_up">••••••••</string>
+    <string name="et_hint_confirm_password_sign_up">••••••••</string>
+    <string name="tv_title_sign_up">Sign Up</string>
+    <string name="tv_subtitle_sign_up">Create your new account</string>
+    <string name="tv_username_sign_up">Username</string>
+    <string name="tv_email_sign_up">Email</string>
+    <string name="tv_password_sign_up">Password</string>
+    <string name="tv_confirm_password_sign_up">Confirm Password</string>
+    <string name="tv_sign_in_hint">Already have an account?</string>
+    <string name="tv_or_sign_up">Or</string>
+    <string name="tv_resend_verification_hint">Verification link expired?</string>
+
+    <!-- SendVerificationLink -->
+    <string name="tv_send_verification_link_dialog">Resend Verification Link</string>
+    <string name="tv_description_send_verification_link_dialog">Please provide the email\naddress that you used when you\nsigned up for your account</string>
+    <string name="et_hint_email_send_verification_link_dialog">example@gmail.com</string>
+
+    <!-- SignUpSuccessActivity -->
+    <string name="img_background_sign_up_success">Image Background Sign Up Success</string>
+    <string name="img_space_sign_up_success">Image Space Sign Up Success</string>
+    <string name="btn_continue_sign_up_success">Continue</string>
+    <string name="tv_title_sign_up_success">Your account\nhas been created\nsuccessfully</string>
+    <string name="tv_subtitle_sign_up_success">Please check your email for verification\nlink to activate your account</string>
+
+    <!-- DashboardFragment -->
+    <string name="img_location_sail_decision">Image Location Sail Decision</string>
+    <string name="img_outlook_sail_decision">Image Outlook Sail Decision</string>
+    <string name="img_humidity_sail_decision">Image Humidity Sail Decision</string>
+    <string name="img_wind_speed_sail_decision">Image Wind Speed Sail Decision</string>
+    <string name="img_wind_direction_sail_decision">Image Wind Direction Sail Decision</string>
+    <string name="img_bottom_sheet_dashboard">Image Bottom Sheet Dashboard</string>
+    <string name="img_top_news">Image Top News</string>
+    <string name="img_today_news">Image Today News</string>
+    <string name="tv_hello_username">Hello, %s</string>
+    <string name="tv_welcome_back">Welcome Back</string>
+    <string name="tv_location_sail_decision">Jakarta, Indonesia</string>
+    <string name="tv_outlook_sail_decision">Day Cloudy</string>
+    <string name="tv_temperature_sail_decision">21°C</string>
+    <string name="tv_humidity_sail_decision">70%</string>
+    <string name="tv_wind_speed_sail_decision">3m/s</string>
+    <string name="tv_wind_direction_sail_decision">NNW</string>
+    <string name="tv_description_sail_decision">Today is a good day to sail</string>
+    <string name="tv_top_news_dashboard">Top News</string>
+    <string name="tv_top_news">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="tv_today_news_dashboard">Today\'s News</string>
+    <string name="tv_title_today_news">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="tv_date_today_news">20 Nov 2023, 12:21 WIB</string>
+    <string name="tv_read_more_today_news">Read More</string>
+
+    <!-- FishGradingFragment -->
+    <string name="title_fish_grading">Fish Grading</string>
+    <string name="img_fish_grading">Image Fish Grading</string>
+    <string name="img_bottom_sheet_fish_grading">Image Bottom Sheet Fish Grading</string>
+    <string name="tv_title_fish_grading">Grade your fish,\nunveil the quality in every catch!</string>
+
+    <!-- MarketFragment -->
+    <string name="title_market">Market</string>
+    <string name="search_bar_market">Search Bloomy</string>
+    <string name="tab_layout_grade_market">Grade</string>
+    <string name="img_bottom_sheet_market">Image Bottom Sheet Market</string>
+    <string name="tv_title_market">Navigate the waves,\ndiscover your perfect fish!</string>
+    <string name="tv_fresh_catch_market">Fresh Catch of the Day</string>
+
+    <!-- FreshCatchMarket -->
+    <string name="img_fresh_catch_market">Image Fresh Catch Market</string>
+    <string name="img_grade_fresh_catch_market">Image Grade Fresh Catch Market</string>
+    <string name="img_location_fresh_catch_market">Image Location Fresh Catch Market</string>
+    <string name="tv_title_fresh_catch_market">Lorem Ipsum Fish</string>
+    <string name="tv_grade_fresh_catch_market">A</string>
+    <string name="tv_price_fresh_catch_market">Rp50.000/kg</string>
+    <string name="tv_quantity_fresh_catch_market">20 kg left</string>
+    <string name="tv_location_fresh_catch_market">Jakarta Utara</string>
+
+    <!-- MarketGradeProduct -->
+    <string name="img_market_grade_product">Image Market Grade Product</string>
+    <string name="img_favorite_market_grade_product">Image Favorite Market Grade Product</string>
+    <string name="img_location_market_grade_product">Image Location Market Grade Product</string>
+    <string name="tv_title_market_grade_product">Lorem Ipsum Fish</string>
+    <string name="tv_price_market_grade_product">Rp50.000/kg</string>
+    <string name="tv_quantity_market_grade_product">20 kg left</string>
+    <string name="tv_location_market_grade_product">Jakarta Utara</string>
+
+    <!-- MarketSearchProductActivity -->
+    <string name="title_market_search_product">Search Product</string>
+    <string name="search_bar_market_product">Search Bloomy</string>
+    <string name="img_bottom_sheet_market_search_product">Image Bottom Sheet Market Search Product</string>
+    <string name="tv_description_market_search_product">Showing 0 result</string>
+    <string name="search_result_single">result</string>
+    <string name="search_result_plural">results</string>
+    <string name="search_description">Showing %d %s for \"%s\"</string>
+
+    <!-- ItemMarketSearchProduct -->
+    <string name="img_market_search_product">Image Market Search Product</string>
+    <string name="img_grade_market_search_product">Image Grade Market Search Product</string>
+    <string name="img_location_market_search_product">Image Location Market Search Product</string>
+    <string name="tv_title_market_search_product">Lorem Ipsum Fish</string>
+    <string name="tv_grade_market_search_product">A</string>
+    <string name="tv_price_market_search_product">Rp50.000/kg</string>
+    <string name="tv_quantity_market_search_product">20 kg left</string>
+    <string name="tv_location_market_search_product">Jakarta Utara</string>
+
+    <!-- MarketProductDetailActivity -->
+    <string name="title_product_detail">Product Detail</string>
+    <string name="img_market_product_detail">Image Market Product Detail</string>
+    <string name="img_bottom_sheet_market_product_detail">Image Bottom Sheet Market Product Detail</string>
+    <string name="img_grade_sheet_market_product_detail">Image Grade Sheet Market Product Detail</string>
+    <string name="img_content_divider_description_market_product_detail">Image Content Divider Description Market Product Detail</string>
+    <string name="img_content_divider_seller_market_product_detail">Image Content Divider Seller Market Product Detail</string>
+    <string name="img_location_seller_market_product_detail">Image Location Seller Market Product Detail</string>
+    <string name="img_background_button_market_product_detail">Image Background Market Product Detail</string>
+    <string name="img_content_divider_market_product_detail">Image Content Divider Market Product Detail</string>
+    <string name="img_favorite_container_market_product_detail">Image Favorite Container Market Product Detail</string>
+    <string name="img_favorite_market_product_detail">Image Favorite Market Product Detail</string>
+    <string name="tv_title_market_product_detail">Lorem Ipsum Fish</string>
+    <string name="tv_grade_market_product_detail">Grade \"A\"</string>
+    <string name="tv_price_market_product_detail">Rp50.000/kg</string>
+    <string name="tv_quantity_market_product_detail">20 kg left</string>
+    <string name="tv_hint_description_market_product_detail">Description</string>
+    <string name="tv_value_description_market_product_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, duis aute irure dolor in reprehenderit.</string>
+    <string name="tv_name_seller_market_product_detail">Lorem\'s Store</string>
+    <string name="tv_location_seller_market_product_detail">Jakarta Utara</string>
+
+    <!-- MarketSellerDetailActivity -->
+    <string name="title_seller_detail">Seller Detail</string>
+    <string name="img_phone_seller_detail">Image Phone Seller Detail</string>
+    <string name="img_location_seller_detail">Image Location Seller Detail</string>
+    <string name="img_bottom_sheet_seller_detail">Image Bottom Sheet Seller Detail</string>
+    <string name="img_display_product_seller_detail">Image Display Product Seller Detail</string>
+    <string name="tv_name_seller_detail">Name</string>
+    <string name="tv_phone_seller_detail">Email</string>
+    <string name="tv_location_seller_detail">Location</string>
+    <string name="tv_product_seller_detail">0 Product</string>
+    <string name="tv_display_product_seller_detail">Display</string>
+
+    <!-- BuyBottomSheetDialog -->
+    <string name="img_cancel_buy_bottom_sheet_dialog">Image Cancel Buy Bottom Sheet Dialog</string>
+    <string name="img_order_detail_content_divider_buy_bottom_sheet_dialog">Image Order Detail Content Divider Buy Bottom Sheet Dialog</string>
+    <string name="img_value_quantity_container_buy_bottom_sheet">Image Value Quantity Container Buy Bottom Sheet Dialog</string>
+    <string name="img_subtract_quantity_buy_bottom_sheet_dialog">Image Subtract Quantity Buy Bottom Sheet Dialog</string>
+    <string name="img_add_quantity_buy_bottom_sheet_dialog">Image Add Quantity Buy Bottom Sheet Dialog</string>
+    <string name="img_value_delivery_method_container_buy_bottom_sheet_dialog">Image Value Delivery Method Container Buy Bottom Sheet Dialog</string>
+    <string name="img_drop_down_delivery_method_buy_bottom_sheet_dialog">Image Drop Down Delivery Method Buy Bottom Sheet Dialog</string>
+    <string name="img_total_content_divider_buy_bottom_sheet_dialog">Image Total Content Divider Buy Bottom Sheet Dialog</string>
+    <string name="tv_order_detail_buy_bottom_sheet_dialog">Order Detail</string>
+    <string name="tv_hint_payment_method_buy_bottom_sheet_dialog">Payment Method</string>
+    <string name="tv_hint_quantity_buy_bottom_sheet_dialog">Quantity</string>
+    <string name="tv_hint_delivery_method_buy_bottom_sheet_dialog">Delivery Method</string>
+    <string name="tv_hint_pickup_date_buy_bottom_sheet_dialog">Pickup Date</string>
+    <string name="tv_hint_total_buy_bottom_sheet_dialog">Total</string>
+    <string name="tv_value_payment_method_buy_bottom_sheet_dialog">Cash On Delivery</string>
+    <string name="tv_value_quantity_buy_bottom_sheet_dialog">1</string>
+    <string name="tv_value_delivery_method_buy_bottom_sheet_dialog">Self-Pickup</string>
+    <string name="tv_value_total_buy_bottom_sheet_dialog">Rp0</string>
+    <string name="tv_value_pickup_date_buy_bottom_sheet_dialog">- Not Set -</string>
+    <string name="self_pickup_method_buy_bottom_sheet_dialog">Self-Pickup</string>
+    <string name="delivery_method_buy_bottom_sheet_dialog">Delivery</string>
+
+    <!-- FishPricingFragment -->
+    <string name="title_fish_pricing">Fish Pricing</string>
+    <string name="img_bottom_sheet_fish_pricing">Image Bottom Sheet Fish Pricing</string>
+    <string name="tv_title_fish_pricing">Price your fish,\nunveil the value in every catch!</string>
+    <string name="hint_species_fish_pricing">Fish Species</string>
+    <string name="hint_actual_price_fish_pricing">Actual Price (kg)</string>
+    <string name="hint_catching_method_fish_pricing">Catching Method</string>
+    <string name="hint_grade_fish_pricing">Grade</string>
+    <string name="hint_sustainability_fish_pricing">Sustainability</string>
+    <string name="hint_weight_fish_pricing">Weight</string>
+    <string name="value_catching_method_fish_pricing">Farmed</string>
+    <string name="value_grade_fish_pricing">A</string>
+    <string name="value_sustainability_fish_pricing">Moderately Sustainable</string>
+
+    <!-- ProfileFragment -->
+    <string name="title_my_profile">My Profile</string>
+    <string name="action_favorite_profile">Action Favorite Profile</string>
+    <string name="action_transaction_profile">Action Transaction Profile</string>
+    <string name="img_my_shop_profile">Image My Shop Profile</string>
+    <string name="img_my_shop_right_profile">Image My Shop Right Profile</string>
+    <string name="img_bottom_sheet_profile">Image Bottom Sheet Profile</string>
+    <string name="img_edit_profile">Image Edit Profile</string>
+    <string name="img_edit_profile_right">Image Edit Profile Right</string>
+    <string name="img_reset_password">Image Reset Password</string>
+    <string name="img_reset_password_right">Image Reset Password Right</string>
+    <string name="img_content_divider_profile_settings">Image Content Divider Profile Settings</string>
+    <string name="img_change_language">Image Change Language</string>
+    <string name="img_change_language_right">Image Change Language Right</string>
+    <string name="img_content_divider_application_settings">Image Content Divider Application Settings</string>
+    <string name="img_sign_out">Image Sign Out</string>
+    <string name="img_bottom_navigation_space">Image Bottom Navigation Space</string>
+    <string name="tv_name_profile">Name</string>
+    <string name="tv_phone_number_profile">Phone Number</string>
+    <string name="tv_email_profile">Email</string>
+    <string name="tv_my_shop_profile">My Shop</string>
+    <string name="tv_profile_settings">Profile Settings</string>
+    <string name="tv_edit_profile">Edit Profile</string>
+    <string name="tv_edit_profile_description">Update your profile information</string>
+    <string name="tv_reset_password">Reset Password</string>
+    <string name="tv_reset_password_description">Secure your account with a new password</string>
+    <string name="tv_application_settings">Application Settings</string>
+    <string name="tv_change_language">Change Language</string>
+    <string name="tv_change_language_description">Set the language that suits you the most</string>
+    <string name="tv_sign_out">Sign Out</string>
+    <string name="tv_app_version">App Version 1.0.0</string>
+
+    <!-- FavoriteActivity -->
+    <string name="title_my_favorite">My Favorite</string>
+    <string name="img_bottom_sheet_favorite">Image Bottom Sheet Favorite</string>
+    <string name="tv_subtitle_favorite">"Favorites on the hook,\ndiscover your ideal fish!</string>
+    <string name="tv_description_favorite">0 Product</string>
+
+    <!-- Favorite -->
+    <string name="img_favorite">Image Favorite</string>
+    <string name="img_grade_favorite">Image Grade Favorite</string>
+    <string name="img_location_favorite">Image Location Favorite</string>
+    <string name="tv_title_favorite">Lorem Ipsum Fish</string>
+    <string name="tv_grade_favorite">A</string>
+    <string name="tv_price_favorite">Rp50.000/kg</string>
+    <string name="tv_quantity_favorite">20 kg left</string>
+    <string name="tv_location_favorite">Jakarta Utara</string>
+
+    <!-- TransactionActivity -->
+    <string name="title_my_transaction">My Transaction</string>
+    <string name="tab_layout_transaction">Tab Layout Transaction</string>
+    <string name="img_bottom_sheet_transaction">Image Bottom Sheet Transaction</string>
+    <string name="img_content_divider_transaction">Image Content Divider Transaction</string>
+    <string name="tv_subtitle_transaction">Ocean\'s trade in a glance,\nreview transactions at a glance</string>
+
+    <!-- Transaction -->
+    <string name="img_user_transaction">Image User Transaction</string>
+    <string name="img_status_transaction">Image Status Transaction</string>
+    <string name="img_product_transaction">Image Product Transaction</string>
+    <string name="img_grade_transaction">Image Grade Transaction</string>
+    <string name="img_delivery_method_transaction">Image Delivery Method Transaction</string>
+    <string name="img_quantity_transaction">Image Quantity Transaction</string>
+    <string name="tv_user_transaction">Name</string>
+    <string name="tv_status_transaction">Status</string>
+    <string name="tv_grade_transaction">A</string>
+    <string name="tv_title_transaction">Lorem Ipsum Fish</string>
+    <string name="tv_price_transaction">Rp50.000/kg</string>
+    <string name="tv_delivery_method_transaction">Self-Pickup</string>
+    <string name="tv_quantity_transaction">5</string>
+    <string name="tv_total_transaction">Total: Rp250.000</string>
+
+    <!-- PurchasesTransactionDetailActivity -->
+    <string name="title_purchases_transaction_detail">Purchases Transaction Detail</string>
+    <string name="img_bottom_sheet_purchases_transaction_detail">Image Bottom Sheet Purchases Transaction Detail</string>
+    <string name="img_user_purchases_transaction_detail">Image User Purchases Transaction Detail</string>
+    <string name="img_product_purchases_transaction_detail">Image Product Purchases Transaction Detail</string>
+    <string name="img_grade_purchases_transaction_detail">Image Grade Purchases Transaction Detail</string>
+    <string name="img_delivery_method_purchases_transaction_detail">Image Delivery Method Purchases Transaction Detail</string>
+    <string name="img_quantity_purchases_transaction_detail">Image Quantity Purchases Transaction Detail</string>
+    <string name="img_content_divider_address_purchases_transaction_detail">Image Content Divider Address Purchases Transaction Detail</string>
+    <string name="img_content_divider_status_purchases_transaction_detail">Image Content Divider Status Purchases Transaction Detail</string>
+    <string name="img_content_divider_price_purchases_transaction_detail">Image Content Divider Price Purchases Transaction Detail</string>
+    <string name="img_content_divider_purchases_transaction_detail">Image Content Divider Purchases Transaction Detail</string>
+    <string name="img_background_button_purchases_transaction_detail">Image Background Purchases Transaction Detail</string>
+    <string name="tv_user_purchases_transaction_detail">Sandhi</string>
+    <string name="tv_default_user_purchases_transaction_detail">Name</string>
+    <string name="tv_grade_purchases_transaction_detail">A</string>
+    <string name="tv_default_grade_purchases_transaction_detail">.</string>
+    <string name="tv_title_purchases_transaction_detail">Lorem Ipsum Fish</string>
+    <string name="tv_default_title_purchases_transaction_detail">Title</string>
+    <string name="tv_price_purchases_transaction_detail">Rp50.000/kg</string>
+    <string name="tv_default_price_purchases_transaction_detail">Rp0/kg</string>
+    <string name="tv_delivery_method_purchases_transaction_detail">Self-Pickup</string>
+    <string name="tv_default_delivery_method_purchases_transaction_detail">Delivery Method</string>
+    <string name="tv_quantity_purchases_transaction_detail">5</string>
+    <string name="tv_default_quantity_purchases_transaction_detail">0</string>
+    <string name="tv_receipt_number_purchases_transaction_detail">Receipt Number</string>
+    <string name="tv_value_receipt_number_purchases_transaction_detail">CH2-PS086</string>
+    <string name="tv_default_value_receipt_number_purchases_transaction_detail">-</string>
+    <string name="tv_seller_address_purchases_transaction_detail">Seller Address:</string>
+    <string name="tv_value_seller_address_purchases_transaction_detail">Pacific Century Place Tower Level 45 SCBD Lot 10, Jl. Jenderal Sudirman No.53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</string>
+    <string name="tv_default_value_seller_address_purchases_transaction_detail" tools:ignore="TypographyEllipsis">...</string>
+    <string name="tv_status_purchases_transaction_detail">Status</string>
+    <string name="tv_value_status_purchases_transaction_detail">Not Confirmed</string>
+    <string name="tv_default_value_status_purchases_transaction_detail" tools:ignore="TypographyEllipsis">-</string>
+    <string name="tv_pickup_date_purchases_transaction_detail">Pickup Date</string>
+    <string name="tv_value_pickup_date_purchases_transaction_detail">2023/12/22 9:41</string>
+    <string name="tv_default_value_pickup_date_purchases_transaction_detail" tools:ignore="TypographyEllipsis">-</string>
+    <string name="tv_subtotal_purchases_transaction_detail">Subtotal</string>
+    <string name="tv_value_subtotal_purchases_transaction_detail">Rp250.000</string>
+    <string name="tv_default_value_subtotal_purchases_transaction_detail">Rp0</string>
+    <string name="tv_shipping_cost_purchases_transaction_detail">Shipping Cost</string>
+    <string name="tv_value_shipping_cost_purchases_transaction_detail">Rp0</string>
+    <string name="tv_default_value_shipping_cost_purchases_transaction_detail">Rp0</string>
+    <string name="tv_total_purchases_transaction_detail">Total</string>
+    <string name="tv_value_total_purchases_transaction_detail">Rp250.000</string>
+    <string name="tv_default_value_total_purchases_transaction_detail">Rp0</string>
+
+    <!-- EditPurchasesTransactionBottomSheetDialog -->
+    <string name="img_cancel_edit_purchases_transaction_bottom_sheet_dialog">Image Cancel Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_order_detail_content_divider_edit_purchases_transaction_bottom_sheet_dialog">Image Order Detail Content Divider Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_value_quantity_container_edit_purchases_transaction_bottom_sheet">Image Value Quantity Container Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_subtract_quantity_edit_purchases_transaction_bottom_sheet_dialog">Image Subtract Quantity Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_add_quantity_edit_purchases_transaction_bottom_sheet_dialog">Image Add Quantity Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_value_delivery_method_container_edit_purchases_transaction_bottom_sheet_dialog">Image Value Delivery Method Container Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_drop_down_delivery_method_edit_purchases_transaction_bottom_sheet_dialog">Image Drop Down Delivery Method Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="img_total_content_divider_edit_purchases_transaction_bottom_sheet_dialog">Image Total Content Divider Edit Purchases Transaction Bottom Sheet Dialog</string>
+    <string name="tv_order_detail_edit_purchases_transaction_bottom_sheet_dialog">Edit Transaction</string>
+    <string name="tv_hint_payment_method_edit_purchases_transaction_bottom_sheet_dialog">Payment Method</string>
+    <string name="tv_hint_quantity_edit_purchases_transaction_bottom_sheet_dialog">Quantity</string>
+    <string name="tv_hint_delivery_method_edit_purchases_transaction_bottom_sheet_dialog">Delivery Method</string>
+    <string name="tv_hint_pickup_date_edit_purchases_transaction_bottom_sheet_dialog">Pickup Date</string>
+    <string name="tv_hint_total_edit_purchases_transaction_bottom_sheet_dialog">Subtotal</string>
+    <string name="tv_value_payment_method_edit_purchases_transaction_bottom_sheet_dialog">Cash On Delivery</string>
+    <string name="tv_value_quantity_edit_purchases_transaction_bottom_sheet_dialog">1</string>
+    <string name="tv_value_delivery_method_edit_purchases_transaction_bottom_sheet_dialog">Self-Pickup</string>
+    <string name="tv_value_total_edit_purchases_transaction_bottom_sheet_dialog">Rp0</string>
+    <string name="tv_value_pickup_date_edit_purchases_transaction_bottom_sheet_dialog">- Not Set -</string>
+    <string name="self_pickup_method_edit_purchases_transaction_bottom_sheet_dialog">Self-Pickup</string>
+    <string name="delivery_method_edit_purchases_transaction_bottom_sheet_dialog">Delivery</string>
+
+    <!-- SalesTransactionDetailActivity -->
+    <string name="title_sales_transaction_detail">Sales Transaction Detail</string>
+    <string name="img_bottom_sheet_sales_transaction_detail">Image Bottom Sheet Sales Transaction Detail</string>
+    <string name="img_user_sales_transaction_detail">Image User Sales Transaction Detail</string>
+    <string name="img_product_sales_transaction_detail">Image Product Sales Transaction Detail</string>
+    <string name="img_grade_sales_transaction_detail">Image Grade Sales Transaction Detail</string>
+    <string name="img_delivery_method_sales_transaction_detail">Image Delivery Method Sales Transaction Detail</string>
+    <string name="img_quantity_sales_transaction_detail">Image Quantity Sales Transaction Detail</string>
+    <string name="img_content_divider_address_sales_transaction_detail">Image Content Divider Address Sales Transaction Detail</string>
+    <string name="img_content_divider_status_sales_transaction_detail">Image Content Divider Status Sales Transaction Detail</string>
+    <string name="img_content_divider_price_sales_transaction_detail">Image Content Divider Price Sales Transaction Detail</string>
+    <string name="img_content_divider_sales_transaction_detail">Image Content Divider Sales Transaction Detail</string>
+    <string name="img_background_button_sales_transaction_detail">Image Background Sales Transaction Detail</string>
+    <string name="tv_user_sales_transaction_detail">Sandhi</string>
+    <string name="tv_default_user_sales_transaction_detail">Name</string>
+    <string name="tv_grade_sales_transaction_detail">A</string>
+    <string name="tv_default_grade_sales_transaction_detail">.</string>
+    <string name="tv_title_sales_transaction_detail">Lorem Ipsum Fish</string>
+    <string name="tv_default_title_sales_transaction_detail">Title</string>
+    <string name="tv_price_sales_transaction_detail">Rp50.000/kg</string>
+    <string name="tv_default_price_sales_transaction_detail">Rp0/kg</string>
+    <string name="tv_delivery_method_sales_transaction_detail">Self-Pickup</string>
+    <string name="tv_default_delivery_method_sales_transaction_detail">Delivery Method</string>
+    <string name="tv_quantity_sales_transaction_detail">5</string>
+    <string name="tv_default_quantity_sales_transaction_detail">0</string>
+    <string name="tv_receipt_number_sales_transaction_detail">Receipt Number</string>
+    <string name="tv_value_receipt_number_sales_transaction_detail">CH2-PS086</string>
+    <string name="tv_default_value_receipt_number_sales_transaction_detail">-</string>
+    <string name="tv_buyer_address_sales_transaction_detail">Buyer Address:</string>
+    <string name="tv_value_buyer_address_sales_transaction_detail">Pacific Century Place Tower Level 45 SCBD Lot 10, Jl. Jenderal Sudirman No.53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</string>
+    <string name="tv_default_value_buyer_address_sales_transaction_detail" tools:ignore="TypographyEllipsis">...</string>
+    <string name="tv_status_sales_transaction_detail">Status</string>
+    <string name="tv_value_status_sales_transaction_detail">Not Confirmed</string>
+    <string name="tv_default_value_status_sales_transaction_detail" tools:ignore="TypographyEllipsis">...</string>
+    <string name="tv_pickup_date_sales_transaction_detail">Pickup Date</string>
+    <string name="tv_value_pickup_date_sales_transaction_detail">2023/12/22 9:41</string>
+    <string name="tv_default_value_pickup_date_sales_transaction_detail" tools:ignore="TypographyEllipsis">-</string>
+    <string name="tv_subtotal_sales_transaction_detail">Subtotal</string>
+    <string name="tv_value_subtotal_sales_transaction_detail">Rp250.000</string>
+    <string name="tv_default_value_subtotal_sales_transaction_detail">Rp0</string>
+    <string name="tv_shipping_cost_sales_transaction_detail">Shipping Cost</string>
+    <string name="tv_value_shipping_cost_sales_transaction_detail">Rp0</string>
+    <string name="tv_default_value_shipping_cost_sales_transaction_detail">Rp0</string>
+    <string name="tv_total_sales_transaction_detail">Total</string>
+    <string name="tv_value_total_sales_transaction_detail">Rp250.000</string>
+    <string name="tv_default_value_total_sales_transaction_detail">Rp0</string>
+
+    <!-- EditSalesTransactionBottomSheetDialog -->
+    <string name="img_cancel_edit_sales_transaction_bottom_sheet_dialog">Image Cancel Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_order_detail_content_divider_edit_sales_transaction_bottom_sheet_dialog">Image Order Detail Content Divider Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_value_quantity_container_edit_sales_transaction_bottom_sheet">Image Value Quantity Container Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_subtract_quantity_edit_sales_transaction_bottom_sheet_dialog">Image Subtract Quantity Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_add_quantity_edit_sales_transaction_bottom_sheet_dialog">Image Add Quantity Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_value_delivery_method_container_edit_sales_transaction_bottom_sheet_dialog">Image Value Delivery Method Container Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_drop_down_delivery_method_edit_sales_transaction_bottom_sheet_dialog">Image Drop Down Delivery Method Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="img_total_content_divider_edit_sales_transaction_bottom_sheet_dialog">Image Total Content Divider Edit Sales Transaction Bottom Sheet Dialog</string>
+    <string name="tv_order_detail_edit_sales_transaction_bottom_sheet_dialog">Edit Transaction</string>
+    <string name="tv_hint_payment_method_edit_sales_transaction_bottom_sheet_dialog">Payment Method</string>
+    <string name="tv_hint_shipping_cost_edit_sales_transaction_bottom_sheet_dialog">Shipping Cost</string>
+    <string name="tv_hint_status_edit_sales_transaction_bottom_sheet_dialog">Status</string>
+    <string name="tv_hint_receipt_number_edit_sales_transaction_bottom_sheet_dialog">Receipt Number</string>
+    <string name="tv_value_payment_method_edit_sales_transaction_bottom_sheet_dialog">Cash On Delivery</string>
+    <string name="tv_value_shipping_cost_edit_sales_transaction_bottom_sheet_dialog">- Not Set -</string>
+    <string name="tv_value_status_edit_sales_transaction_bottom_sheet_dialog">Not Confirmed</string>
+    <string name="tv_value_receipt_number_edit_sales_transaction_bottom_sheet_dialog">- Not Set -</string>
+    <string name="not_confirmed_status_edit_sales_transaction_bottom_sheet_dialog">Not Confirmed</string>
+    <string name="in_process_status_edit_sales_transaction_bottom_sheet_dialog">In Process</string>
+    <string name="shipped_status_edit_sales_transaction_bottom_sheet_dialog">Shipped</string>
+    <string name="finished_status_edit_sales_transaction_bottom_sheet_dialog">Finished</string>
+    <string name="canceled_status_edit_sales_transaction_bottom_sheet_dialog">Canceled</string>
+
+    <!-- EditProfileActivity -->
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="img_bottom_sheet_edit_profile">Image Bottom Sheet Edit Profile</string>
+    <string name="img_content_divider_edit_profile">Image Content Divider Edit Profile</string>
+    <string name="tv_subtitle_edit_profile">Update your\nProfile Information</string>
+    <string name="tv_choose_image_edit_profile">Choose\nImage</string>
+    <string name="hint_name_edit_profile">Name</string>
+    <string name="hint_phone_number_edit_profile">Phone Number</string>
+    <string name="hint_province_edit_profile">Province</string>
+    <string name="hint_city_edit_profile">City / Regency</string>
+    <string name="hint_address_edit_profile">Address</string>
+    <string name="hint_description_edit_profile">Description</string>
+
+    <!-- ResetPasswordActivity -->
+    <string name="title_reset_password">Reset Password</string>
+    <string name="img_bottom_sheet_reset_password">Image Bottom Sheet Reset Password</string>
+    <string name="img_content_divider_reset_password">Image Content Divider Reset Password</string>
+    <string name="tv_subtitle_reset_password">Secure your account\nwith a new password</string>
+    <string name="tv_old_password_reset">Old Password</string>
+    <string name="et_hint_old_password_reset">••••••••</string>
+    <string name="tv_new_password_reset">New Password</string>
+    <string name="et_hint_new_password_reset">••••••••</string>
+    <string name="tv_confirm_new_password_reset">Confirm New Password</string>
+    <string name="et_hint_confirm_new_password_reset">••••••••</string>
+
+    <!-- ShopActivity -->
+    <string name="title_my_shop">My Shop</string>
+    <string name="img_email_shop">Image Email Shop</string>
+    <string name="img_location_shop">Image Location Shop</string>
+    <string name="img_bottom_sheet_shop">Image Bottom Sheet Shop</string>
+    <string name="img_display_product_shop">Image Display Product Shop</string>
+    <string name="tv_name_shop">Name</string>
+    <string name="tv_email_shop">Email</string>
+    <string name="tv_location_shop">Location</string>
+    <string name="tv_product_shop">0 Product</string>
+    <string name="tv_display_product_shop">Display</string>
+
+    <!-- ShopGrid -->
+    <string name="img_product_shop_grid">Image Product Shop Grid</string>
+    <string name="img_grade_product_shop_grid">Image Grade Product Shop Grid</string>
+    <string name="tv_title_product_shop_grid">Consectetur Fish</string>
+    <string name="tv_grade_product_shop_grid">A</string>
+    <string name="tv_price_product_shop_grid">Rp30.000/kg</string>
+    <string name="tv_quantity_product_shop_grid">10 kg left</string>
+
+    <!-- ShopList -->
+    <string name="img_product_shop_list">Image Product Shop List</string>
+    <string name="img_grade_product_shop_list">Image Grade Product Shop List</string>
+    <string name="img_favorite_product_shop_list">Image Favorite Product Shop List</string>
+    <string name="img_rating_product_shop_list">Image Rating Product Shop List</string>
+    <string name="img_divider_product_shop_list">Image Divider Product Shop List</string>
+    <string name="tv_title_product_shop_list">Consectetur Fish</string>
+    <string name="tv_grade_product_shop_list">A</string>
+    <string name="tv_price_product_shop_list">Rp30.000/kg</string>
+    <string name="tv_rating_product_shop_list">No Rating</string>
+    <string name="tv_sold_product_shop_list">0 Sold</string>
+
+    <!-- ShopAddProductActivity -->
+    <string name="title_add_product">Add Product</string>
+    <string name="img_bottom_sheet_add_product">Image Bottom Sheet Add Product</string>
+    <string name="img_choose_image">Image Choose Image</string>
+    <string name="img_add_product">Image Add Product</string>
+    <string name="img_content_divider_add_product">Image Content Divider Add Product</string>
+    <string name="tv_choose_image">Choose Image</string>
+    <string name="hint_title_add_product">Title</string>
+    <string name="hint_grade_add_product">Grade</string>
+    <string name="hint_price_kg_add_product">Price/kg</string>
+    <string name="hint_quantity_kg_add_product">Quantity (kg)</string>
+    <string name="hint_description_add_product">Description</string>
+    <string name="value_grade_add_product">A</string>
+
+    <!-- ShopProductDetailActivity -->
+    <string name="img_shop_product_detail">Image Shop Product Detail</string>
+    <string name="img_bottom_sheet_shop_product_detail">Image Bottom Sheet Shop Product Detail</string>
+    <string name="img_grade_sheet_shop_product_detail">Image Grade Sheet Shop Product Detail</string>
+    <string name="img_rating_shop_product_detail">Image Rating Shop Product Detail</string>
+    <string name="img_divider_shop_product_detail">Image Divider Shop Product Detail</string>
+    <string name="img_content_divider_description_shop_product_detail">Image Content Divider Description Shop Product Detail</string>
+    <string name="img_background_button_shop_product_detail">Image Background Shop Product Detail</string>
+    <string name="img_content_divider_shop_product_detail">Image Content Divider Shop Product Detail</string>
+    <string name="tv_title_shop_product_detail">Consectetur Fish</string>
+    <string name="tv_grade_shop_product_detail">Grade \"A\"</string>
+    <string name="tv_price_shop_product_detail">Rp30.000/kg</string>
+    <string name="tv_divider_shop_product_detail">|</string>
+    <string name="tv_quantity_shop_product_detail">50 kg left</string>
+    <string name="tv_rating_shop_product_detail">No Rating</string>
+    <string name="tv_sold_shop_product_detail">0 Sold</string>
+    <string name="tv_hint_description_shop_product_detail">Description</string>
+    <string name="tv_value_description_shop_product_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed tristique, urna ut ullamcorper ullamcorper, ipsum dui commodo mauris, eu congue risus eros a libero. Sed sagittis tincidunt turpis, non tincidunt justo feugiat at. Vestibulum in lacinia nunc. Sed non neque id mauris tincidunt ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed tristique, urna ut ullamcorper ullamcorper, ipsum dui commodo mauris, eu congue risus eros a libero.</string>
+
+    <!-- ShopEditProductActivity -->
+    <string name="title_edit_product">Edit Product</string>
+    <string name="img_bottom_sheet_edit_product">Image Bottom Sheet Edit Product</string>
+    <string name="img_edit_product">Image Edit Product</string>
+    <string name="img_content_divider_edit_product">Image Content Divider Edit Product</string>
+    <string name="hint_title_edit_product">Title</string>
+    <string name="hint_grade_edit_product">Grade</string>
+    <string name="hint_price_kg_edit_product">Price/kg</string>
+    <string name="hint_quantity_kg_edit_product">Quantity (kg)</string>
+    <string name="hint_description_edit_product">Description</string>
+    <string name="value_title_edit_product">Consectetur Fish</string>
+    <string name="value_grade_edit_product">A</string>
+    <string name="value_price_kg_edit_product">30000</string>
+    <string name="value_quantity_kg_edit_product">50</string>
+    <string name="value_description_edit_product">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed tristique, urna ut ullamcorper ullamcorper, ipsum dui commodo mauris, eu congue risus eros a libero. Sed sagittis tincidunt turpis, non tincidunt justo feugiat at. Vestibulum in lacinia nunc. Sed non neque id mauris tincidunt ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed tristique, urna ut ullamcorper ullamcorper, ipsum dui commodo mauris, eu congue risus eros a libero.</string>
+
+    <!-- ErrorNoInternetConnectionActivity -->
+    <string name="img_background_error_no_internet_connection">Image Background Error No Internet Connection</string>
+    <string name="img_error_no_internet_connection">Image Error No Internet Connection</string>
+    <string name="btn_try_again">Try Again</string>
+    <string name="tv_title_error_no_internet_connection">No Internet\nConnection</string>
+    <string name="tv_subtitle_error_no_internet_connection">Please check your internet\nconnection and try again</string>
+
+    <!-- FishGradingDialog -->
+    <string name="fish_grade">This fish is grade \"%s\"</string>
+    <string name="shrimp_grade">This shrimp is grade \"%s\"</string>
+    <string name="fish_grading_description_a">This fish is in excellent condition, displaying vibrant colors, firm flesh, and clear eyes. It meets the highest standards of freshness and quality.</string>
+    <string name="fish_grading_description_b">This fish is in good condition, with acceptable freshness and texture. While it may not be perfect, it still offers a satisfactory eating experience.</string>
+    <string name="fish_grading_description_c">This fish shows signs of age or mishandling, with a decline in freshness and texture. It may have slight discoloration or soft spots, indicating a lower quality compared to higher grades.</string>
+    <string name="shrimp_grading_description_a">This shrimp is in excellent condition, displaying vibrant colors, firm flesh, and clear eyes. It meets the highest standards of freshness and quality.</string>
+    <string name="shrimp_grading_description_b">This shrimp is in good condition, with acceptable freshness and texture. While it may not be perfect, it still offers a satisfactory eating experience.</string>
+    <string name="shrimp_grading_description_c">This shrimp shows signs of age or mishandling, with a decline in freshness and texture. It may have slight discoloration or soft spots, indicating a lower quality compared to higher grades.</string>
+
+    <!-- FishPricingDialog -->
+    <string name="tv_fish_pricing_dialog">Fish Price Recommendation</string>
+    <string name="tv_description_fish_pricing_dialog">Rp75.000</string>
+
+    <!-- ImagePickerDialog -->
+    <string name="img_camera_image_picker_dialog">Image Camera Image Picker Dialog</string>
+    <string name="img_gallery_image_picker_dialog">Image Gallery Image Picker Dialog</string>
+    <string name="tv_choose_image_picker_dialog">Choose Image</string>
+    <string name="tv_camera_image_picker_dialog">Camera</string>
+    <string name="tv_gallery_image_picker_dialog">Gallery</string>
+
+    <!-- RemoveProductDialog -->
+    <string name="img_remove_product_dialog">Image Warning Remove Product Dialog</string>
+    <string name="tv_remove_product_dialog">Remove Product</string>
+    <string name="tv_confirmation_remove_product_dialog">Are you sure you want\nto remove this product?</string>
+
+    <!-- RemoveProductDialog -->
+    <string name="img_remove_transaction_dialog">Image Warning Remove Transaction Dialog</string>
+    <string name="tv_remove_transaction_dialog">Remove Transaction</string>
+    <string name="tv_confirmation_remove_transaction_dialog">Are you sure you want\nto remove this transaction?</string>
+
+    <!-- Additional -->
+    <string name="btn_sign_in">Sign In</string>
+    <string name="btn_sign_in_content_description">Sign in content description</string>
+    <string name="btn_cancel_forgot_password_dialog">Cancel</string>
+    <string name="btn_cancel_forgot_password_dialog_content_description">Cancel content description</string>
+    <string name="btn_forgot_password_dialog">Send</string>
+    <string name="btn_forgot_password_dialog_content_description">Send content description</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_sign_up_content_description">Sign up content description</string>
+    <string name="btn_cancel_send_verification_link_dialog">Cancel</string>
+    <string name="btn_cancel_send_verification_link_dialog_content_description">Cancel content description</string>
+    <string name="btn_send_verification_link_dialog">Resend</string>
+    <string name="btn_send_verification_link_dialog_content_description">Resend content description</string>
+    <string name="btn_cancel_image_picker_dialog">Cancel</string>
+    <string name="btn_cancel_image_picker_dialog_content_description">Cancel content description</string>
+    <string name="btn_no_sign_out_dialog">No</string>
+    <string name="btn_no_sign_out_dialog_content_description">No content description</string>
+    <string name="btn_yes_sign_out_dialog">Yes</string>
+    <string name="btn_yes_sign_out_dialog_content_description">Yes content description</string>
+    <string name="btn_no_sign_up_dialog">No</string>
+    <string name="btn_no_sign_up_dialog_content_description">No content description</string>
+    <string name="btn_yes_sign_up_dialog">Yes</string>
+    <string name="btn_yes_sign_up_dialog_content_description">Yes content description</string>
+    <string name="btn_camera">Take from Camera</string>
+    <string name="btn_camera_content_description">Camera content description</string>
+    <string name="btn_gallery">Select from Gallery</string>
+    <string name="btn_gallery_content_description">Gallery content description</string>
+    <string name="btn_grade">Grade</string>
+    <string name="btn_grade_content_description">Grade content description</string>
+    <string name="btn_close_fish_grading_dialog">Close</string>
+    <string name="btn_close_fish_grading_dialog_content_description">Close content description</string>
+    <string name="btn_predict">Predict</string>
+    <string name="btn_predict_content_description">Predict content description</string>
+    <string name="btn_close_fish_pricing_dialog">Close</string>
+    <string name="btn_close_fish_pricing_dialog_content_description">Close content description</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_reset_password_content_description">Reset password content description</string>
+    <string name="btn_buy">Buy</string>
+    <string name="btn_buy_content_description">Buy content description</string>
+    <string name="btn_buy_bottom_sheet_dialog">Buy</string>
+    <string name="btn_buy_bottom_sheet_dialog_content_description">Buy Content Description</string>
+    <string name="btn_add_product">Add Product</string>
+    <string name="btn_add_product_content_description">Add product content description</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_edit_content_description">Edit content description</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_remove_content_description">Remove content description</string>
+    <string name="btn_no_remove_product_dialog">No</string>
+    <string name="btn_no_remove_product_dialog_content_description">No content description</string>
+    <string name="btn_yes_remove_product_dialog">Yes</string>
+    <string name="btn_yes_remove_product_dialog_content_description">Yes content description</string>
+    <string name="btn_no_remove_transaction_dialog">No</string>
+    <string name="btn_no_remove_transaction_dialog_content_description">No content description</string>
+    <string name="btn_yes_remove_transaction_dialog">Yes</string>
+    <string name="btn_yes_remove_transaction_dialog_content_description">Yes content description</string>
+    <string name="btn_edit_purchases_transaction_bottom_sheet_dialog">Edit</string>
+    <string name="btn_edit_purchases_transaction_bottom_sheet_dialog_content_description">Edit content description</string>
+    <string name="btn_edit_sales_transaction_bottom_sheet_dialog">Edit</string>
+    <string name="btn_edit_sales_transaction_bottom_sheet_dialog_content_description">Edit content description</string>
+    <string name="btn_loading" tools:ignore="TypographyEllipsis">Loading...</string>
+    <string name="invalid_email">Invalid email format</string>
+    <string name="invalid_location">Location not found. Please enable GPS and try again</string>
+    <string name="invalid_sail_decision">Location Disabled</string>
+    <string name="invalid_description_sail_decision">Enable location to use the\nSail Decision feature</string>
+    <string name="invalid_input">Input field can\'t be empty</string>
+    <string name="invalid_quantity">Quantity can\'t be lower than 1</string>
+    <string name="invalid_image">The image remains the same as before</string>
+    <string name="invalid_image_empty">Image filed can\'t be empty</string>
+    <string name="invalid_password">Password must be at least 8 characters</string>
+    <string name="invalid_confirm_password">Confirm password must be at least 8 characters</string>
+    <string name="invalid_buy_sell">Complete your profile information first before buying or selling any product</string>
+    <string name="invalid_transaction">There is no transaction</string>
+    <string name="invalid_edit_transaction">Can only edit transaction that is not confirmed yet</string>
+    <string name="invalid_remove_transaction">Can only remove transaction that is not confirmed yet</string>
+    <string name="success_remove_transaction">Transaction removed</string>
+    <string name="loading" tools:ignore="TypographyEllipsis">Loading...</string>
+    <string name="welcome_to_bloomy">Welcome to Bloomy!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_confirmation">Are you sure\nyou want to sign out?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_confirmation">By signing up, you agree\nto our Terms of Service\nand Privacy Policy</string>
+    <string name="sail_decision_permission">To use the Sail Decision feature, please enable the location permission</string>
+    <string name="temperature_format">%sºC</string>
+    <string name="humidity_format">%d%%</string>
+    <string name="wind_speed_format">%s m/s</string>
+    <string name="default_n_a">N/A</string>
+    <string name="default_fish_grading_description">Grade Description</string>
+    <string name="default_name">Name</string>
+    <string name="default_phone_number">Phone Number</string>
+    <string name="default_email">Email</string>
+    <string name="default_location">Location</string>
+    <string name="default_title">Title</string>
+    <string name="default_grade">Grade</string>
+    <string name="default_price">Price</string>
+    <string name="default_quantity">Quantity</string>
+    <string name="default_description" tools:ignore="TypographyEllipsis">...</string>
+
+    <!-- BottomNavigation -->
+    <string name="home">Home</string>
+    <string name="grading">Grading</string>
+    <string name="market">Market</string>
+    <string name="pricing">Pricing</string>
+    <string name="profile">Profile</string>
+
+    <!-- TabLayoutGrade -->
+    <string name="grade_a">Grade \"A\"</string>
+    <string name="grade_b">Grade \"B\"</string>
+    <string name="grade_c">Grade \"C\"</string>
+
+    <!-- TabLayoutTransaction -->
+    <string name="sales">Sales</string>
+    <string name="purchases">Purchases</string>
+
+    <!-- Status -->
+    <string name="not_confirmed">Not Confirmed</string>
+    <string name="in_process">In Process</string>
+    <string name="shipped">Shipped</string>
+    <string name="finished">Finished</string>
+    <string name="canceled">Canceled</string>
+
+    <!-- MethodDelivery -->
+    <string name="delivery">Delivery</string>
+    <string name="self_pickup">Self-Pickup</string>
+
+    <string-array name="value_catching_method">
+        <item>Farmed</item>
+        <item>Netting</item>
+        <item>Spearfishing</item>
+        <item>Fishing Hook</item>
+    </string-array>
+
+    <string-array name="value_sustainability">
+        <item>Moderately Sustainable</item>
+        <item>Unsustainable</item>
+    </string-array>
+
+    <string-array name="value_grade">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string-array name="value_delivery_method">
+        <item>Self-Pickup</item>
+        <item>Delivery</item>
+    </string-array>
+
+    <string-array name="value_status">
+        <item name="not_confirmed">Not Confirmed</item>
+        <item name="in_process">In Process</item>
+        <item name="shipped">Shipped</item>
+        <item name="finished">Finished</item>
+        <item name="canceled">Canceled</item>
+    </string-array>
+
+    <string-array name="data_title_top_news">
+        <item>Nelayan Pertanyakan Rencana Menteri KKP Batasi Kuota Penangkapan Ikan</item>
+        <item>Luhut Akui Indeks Kesehatan Laut RI Masih di Bawah Dunia</item>
+        <item>Perubahan Iklim Bikin Air Laut Berubah Warna</item>
+        <item>LIPI: Potensi Benih Lobster Laut RI 20 Miliar Ekor per Tahun</item>
+        <item>Indonesia Peringkat Kedua Negara Penghasil Ikan Laut Terbesar Dunia</item>
+    </string-array>
+
+    <string-array name="data_image_url_top_news">
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/visual/2022/01/20/kapal-nelayan-tidak-melaut-terkendala-izin_169.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/visual/2019/10/22/847bf6d7-5995-46af-91b7-a96cf246c546_169.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/community/media/visual/2023/09/20/pesisir-laut-thailand-berubah-hijau-ancam-ekosistem-dan-pariwisata-3_43.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/visual/2020/11/25/ilustrasi-benih-lobster_169.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/community/media/visual/2023/06/09/indonesia-peringkat-kedua-negara-penghasil-ikan-laut-terbesar-dunia_169.jpeg</item>
+    </string-array>
+
+    <string-array name="data_web_url_top_news">
+        <item tools:ignore="TypographyDashes,Typos">https://www.cnnindonesia.com/ekonomi/20221228112748-92-893035/nelayan-pertanyakan-rencana-menteri-kkp-batasi-kuota-penangkapan-ikan</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.cnnindonesia.com/ekonomi/20210330124625-92-623807/luhut-akui-indeks-kesehatan-laut-ri-masih-di-bawah-dunia</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.detik.com/jabar/berita/d-6965862/perubahan-iklim-bikin-air-laut-berubah-warna</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.cnnindonesia.com/teknologi/20201130134834-199-576152/lipi-potensi-benih-lobster-laut-ri-20-miliar-ekor-per-tahun</item>
+        <item tools:ignore="TypographyDashes,Typos">https://finance.detik.com/foto-bisnis/d-6763746/indonesia-peringkat-kedua-negara-penghasil-ikan-laut-terbesar-dunia</item>
+    </string-array>
+
+    <string-array name="data_title_today_news">
+        <item>7 Aneka Masakan Ikan Laut, Lezat dan Mudah Dibuat</item>
+        <item>Daftar Wilayah Berpotensi Gelombang Tinggi di Indonesia Hari Ini</item>
+        <item>Ikan Air Laut Lebih Sehat dari Air Tawar? Ini Kata Ahli Gizi</item>
+        <item>Omega 3 Terbaik Ada di Ikan Berukuran Besar, Mitos atau Fakta?</item>
+        <item>Ini 7 Jenis Ikan Laut Paling Disukai di Indonesia</item>
+        <item>Kronologi Kapal Maling Ikan Berbendera Filipina Ditangkap di Laut Sulawesi, Diduga Pakai Modus Baru</item>
+        <item>Tips Simpel Membersihkan dan Menghilangkan Bau Amis Ikan, Tak Selalu Harus Pakai Jeruk Nipis</item>
+        <item>Ambil Ikan di Luar Zona Tangkapan Laut Aru, 3 Kapal Nelayan Diciduk KKP</item>
+        <item>Potensi Sumber Daya Ikan Indonesia Lebih dari 12 Juta Ton per Tahun</item>
+        <item>Tokcer, Ekspor Perikanan Indonesia Sentuh Rp USD 5,71 Miliar</item>
+    </string-array>
+
+    <string-array name="data_date_today_news">
+        <item>05 Sep 2023, 13:46 WIB</item>
+        <item>28 Des 2022, 11:00 WIB</item>
+        <item>10 Jan 2020, 07:00 WIB</item>
+        <item>02 Feb 2019, 10:45 WIB</item>
+        <item>25 Okt 2018, 19:00 WIB</item>
+        <item>28 Nov 2023, 17:45 WIB</item>
+        <item>24 Nov 2023, 06:30 WIB</item>
+        <item>03 Agu 2023, 10:45 WIB</item>
+        <item>12 Jul 2023, 20:15 WIB</item>
+        <item>30 Des 2022, 12:00 WIB</item>
+    </string-array>
+
+    <string-array name="data_image_url_today_news">
+        <item tools:ignore="TypographyDashes,Typos">https://cdn1-production-images-kly.akamaized.net/AQNrYGc6loMA-HTZwpfs8BpSvC8=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2936931/original/024354900_1570788210-bryony-caldwell-HlQzyr_TgWI-unsplash.jpg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/visual/2022/12/27/dampak-gelombang-tinggi-yang-melanda-perairan-indonesia-5_169.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/community/media/visual/2017/04/01/0b41471d-de08-4946-8e70-26a3c184b9b7_169.jpg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/community/media/visual/2019/02/02/17809237-4621-480b-a284-98fd856bffec.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://akcdn.detik.net.id/community/media/visual/2018/10/25/960f9cb0-b55a-44a0-a466-a73a35134783.jpeg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://cdn0-production-images-kly.akamaized.net/o_qqg_FkiIzYibH5-NDwkJCo2d8=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4666418/original/082709000_1701167791-IMG-20231128-WA0015.jpg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://cdn1-production-images-kly.akamaized.net/ytk_FaPRWCeWlVOL03pJPIUMbXA=/29x0:615x586/640x640/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4660940/original/051878300_1700770460-Ikan_1.JPG</item>
+        <item tools:ignore="TypographyDashes,Typos">https://cdn0-production-images-kly.akamaized.net/DYaoO-DbhRCMhORNC_4KoxZvOO8=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4386793/original/092899600_1680868145-IMG-20230407-WA0003.jpg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://cdn0-production-images-kly.akamaized.net/9w60l3SubTbXY7Sfvl8LmY3f3c0=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2041840/original/047368700_1522332201-20180329-Ikan-AY5.jpg</item>
+        <item tools:ignore="TypographyDashes,Typos">https://cdn1-production-images-kly.akamaized.net/42xuhWwR6Shh8aLJb94kpa6w3UM=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4273814/original/062652100_1672121764-20221227-Salju-New-York-AP-6.jpg</item>
+    </string-array>
+
+    <string-array name="data_web_url_today_news">
+        <item tools:ignore="TypographyDashes,Typos">https://www.liputan6.com/hot/read/5307748/7-aneka-masakan-ikan-laut-lezat-dan-mudah-dibuat</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.cnnindonesia.com/teknologi/20221228104328-199-893005/daftar-wilayah-berpotensi-gelombang-tinggi-di-indonesia-hari-ini</item>
+        <item tools:ignore="TypographyDashes,Typos">https://health.detik.com/diet/d-4853524/ikan-air-laut-lebih-sehat-dari-air-tawar-ini-kata-ahli-gizi</item>
+        <item tools:ignore="TypographyDashes,Typos">https://health.detik.com/berita-detikhealth/d-4411275/omega-3-terbaik-ada-di-ikan-berukuran-besar-mitos-atau-fakta</item>
+        <item tools:ignore="TypographyDashes,Typos">https://food.detik.com/info-kuliner/d-4273183/ini-7-jenis-ikan-laut-paling-disukai-di-indonesia</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.liputan6.com/bisnis/read/5466933/kronologi-kapal-maling-ikan-berbendera-filipina-ditangkap-di-laut-sulawesi-diduga-pakai-modus-baru</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.liputan6.com/lifestyle/read/5463164/tips-simpel-membersihkan-dan-menghilangkan-bau-amis-ikan-tak-selalu-harus-pakai-jeruk-nipis</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.liputan6.com/bisnis/read/5360653/ambil-ikan-di-luar-zona-tangkapan-laut-aru-3-kapal-nelayan-diciduk-kkp</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.liputan6.com/bisnis/read/5342976/potensi-sumber-daya-ikan-indonesia-lebih-dari-12-juta-ton-per-tahun</item>
+        <item tools:ignore="TypographyDashes,Typos">https://www.liputan6.com/bisnis/read/5167526/tokcer-ekspor-perikanan-indonesia-sentuh-rp-usd-571-miliar</item>
+    </string-array>
+</resources>

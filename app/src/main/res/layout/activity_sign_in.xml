@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".ui.activity.SignInActivity">
+
+    <ImageView
+        android:id="@+id/img_logo_bloomy_sign_in"
+        android:layout_width="315dp"
+        android:layout_height="175dp"
+        android:paddingTop="20dp"
+        android:contentDescription="@string/img_logo_bloomy_sign_in"
+        android:src="@drawable/image_bloomy"
+        app:layout_constraintBottom_toTopOf="@id/img_bottom_sheet_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_bottom_sheet_sign_in"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/img_bottom_sheet_sign_in"
+        android:src="@drawable/template_bottom_sheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo_bloomy_sign_in" />
+
+    <TextView
+        android:id="@+id/tv_title_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_title_sign_in"
+        android:textColor="@color/blue_500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_bottom_sheet_sign_in" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/tv_subtitle_sign_in"
+        android:textColor="@color/gray_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_sign_in" />
+
+    <TextView
+        android:id="@+id/tv_email_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42.5dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_email_sign_in"
+        android:textColor="@color/blue_500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/til_email_sign_in"
+        app:layout_constraintStart_toStartOf="@id/til_email_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_sign_in" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/blueTextInputLayoutMaterialComponents"
+        android:id="@+id/til_email_sign_in"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_sign_in"
+        app:startIconDrawable="@drawable/icon_email_blue">
+
+        <com.capstone.bloomy.ui.customview.EmailEditText
+            android:id="@+id/et_email_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/blue_500"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/et_hint_email_sign_in"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue_500"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_password_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_password_sign_in"
+        android:textColor="@color/blue_500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/til_password_sign_in"
+        app:layout_constraintStart_toStartOf="@id/til_password_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/til_email_sign_in" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/blueTextInputLayoutMaterialComponents"
+        android:id="@+id/til_password_sign_in"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_500"
+        app:endIconMode="password_toggle"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_password_sign_in"
+        app:startIconDrawable="@drawable/icon_lock">
+
+        <com.capstone.bloomy.ui.customview.PasswordEditText
+            android:id="@+id/et_password_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/et_hint_password_sign_in"
+            android:textColorHint="@color/blue_500"
+            android:inputType="textPassword"
+            android:textColor="@color/blue_500"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btn_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/btn_forgot_password"
+        android:textColor="@color/blue_500"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/til_password_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/til_password_sign_in" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="67.5dp"
+        android:contentDescription="@string/btn_sign_in_content_description"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/btn_sign_in"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/blue_500"
+        app:cornerRadius="10dp"
+        app:rippleColor="@color/ripple_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_password_sign_in" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in">
+
+        <TextView
+            android:id="@+id/tv_sign_up_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_sign_up_hint"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btn_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_sign_up"
+            android:textColor="@color/blue_500"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

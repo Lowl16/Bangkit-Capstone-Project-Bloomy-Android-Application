@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_marginBottom="17.5dp"
+    android:layout_marginHorizontal="25dp"
+    app:cardBackgroundColor="@color/off_white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_market_grade_product"
+            android:layout_width="130dp"
+            android:layout_height="95dp"
+            android:background="@drawable/template_image_product_rounded"
+            android:clipToOutline="true"
+            android:contentDescription="@string/img_market_grade_product"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic"
+            tools:targetApi="s" />
+
+        <TextView
+            android:id="@+id/tv_title_market_grade_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1"
+            android:text="@string/tv_title_market_grade_product"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_market_grade_product"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_price_market_grade_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_price_market_grade_product"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/tv_title_market_grade_product"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_market_grade_product" />
+
+        <TextView
+            android:id="@+id/tv_quantity_market_grade_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_quantity_market_grade_product"
+            android:textColor="@color/gray_dark"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tv_price_market_grade_product"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_market_grade_product" />
+
+        <ImageView
+            android:id="@+id/img_location_market_grade_product"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/img_location_market_grade_product"
+            android:src="@drawable/icon_location_black"
+            app:layout_constraintStart_toStartOf="@id/tv_quantity_market_grade_product"
+            app:layout_constraintTop_toTopOf="@id/tv_location_market_grade_product" />
+
+        <TextView
+            android:id="@+id/tv_location_market_grade_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/default_location"
+            android:textColor="@color/gray_dark"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/img_location_market_grade_product"
+            app:layout_constraintTop_toBottomOf="@id/tv_quantity_market_grade_product"
+            tools:text="@string/tv_location_market_grade_product" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

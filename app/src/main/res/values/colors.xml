@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_900">#133C55</color>
+    <color name="blue_700">#386FA4</color>
+    <color name="blue_500">#2693C9</color>
+    <color name="blue_300">#59A5D8</color>
+    <color name="blue_100">#84D2F6</color>
+    <color name="blue_50">#91E5F6</color>
+    <color name="blue_50_light">#CCE9FF</color>
+    <color name="blue_50_extra_light">#EBF9FF</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="off_white">#FBFBFB</color>
+    <color name="gray">#CACACA</color>
+    <color name="gray_dark">#3E3E42</color>
+    <color name="gray_light">#9C9C9E</color>
+    <color name="gray_extra_light">#EFF1F3</color>
+
+    <color name="ripple_white">#33AAAAAA</color>
+    <color name="ripple_blue">#3BA4E3</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">#2693C9</color>
+</resources>

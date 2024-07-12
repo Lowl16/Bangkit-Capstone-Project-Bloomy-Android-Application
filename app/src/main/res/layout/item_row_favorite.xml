@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="165dp"
+    android:layout_height="185dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_favorite"
+            android:layout_width="165dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/img_favorite"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tv_title_favorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="7.5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1"
+            android:text="@string/tv_title_favorite"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/img_grade_favorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_favorite" />
+
+        <ImageView
+            android:id="@+id/img_grade_favorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/img_grade_favorite"
+            android:src="@drawable/template_circle_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_favorite" />
+
+        <TextView
+            android:id="@+id/tv_grade_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_grade_favorite"
+            android:textColor="@color/off_white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_grade_favorite"
+            app:layout_constraintEnd_toEndOf="@id/img_grade_favorite"
+            app:layout_constraintStart_toStartOf="@id/img_grade_favorite"
+            app:layout_constraintTop_toTopOf="@id/img_grade_favorite" />
+
+        <TextView
+            android:id="@+id/tv_price_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_price_favorite"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tv_title_favorite"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_favorite" />
+
+        <TextView
+            android:id="@+id/tv_quantity_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_quantity_favorite"
+            android:textColor="@color/gray_dark"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/tv_price_favorite"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_favorite" />
+
+        <ImageView
+            android:id="@+id/img_location_favorite"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="2.5dp"
+            android:contentDescription="@string/img_location_favorite"
+            android:src="@drawable/icon_location_black"
+            app:layout_constraintStart_toStartOf="@id/tv_quantity_favorite"
+            app:layout_constraintTop_toTopOf="@id/tv_location_favorite" />
+
+        <TextView
+            android:id="@+id/tv_location_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/default_location"
+            android:textColor="@color/gray_dark"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/img_location_favorite"
+            app:layout_constraintTop_toBottomOf="@id/tv_quantity_favorite"
+            tools:text="@string/tv_location_favorite" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

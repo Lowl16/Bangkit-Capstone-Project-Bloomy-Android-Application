@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".ui.fragment.FishPricingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout_fish_pricing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/material_tool_bar_fish_pricing"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue_500"
+                app:title="@string/title_fish_pricing"
+                app:titleMarginStart="25dp"
+                app:titleTextColor="@color/off_white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/tv_title_fish_pricing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_title_fish_pricing"
+            android:textColor="@color/off_white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar_layout_fish_pricing" />
+
+        <ImageView
+            android:id="@+id/img_bottom_sheet_fish_pricing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/img_bottom_sheet_fish_pricing"
+            android:src="@drawable/template_bottom_sheet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_fish_pricing" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/blueDropDownInputLayoutMaterial3"
+            android:id="@+id/til_species_fish_pricing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/gray_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_bottom_sheet_fish_pricing">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_species_fish_pricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/hint_species_fish_pricing"
+                android:inputType="none"
+                android:textColor="@color/gray_dark"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/blueTextInputLayoutMaterial3"
+            android:id="@+id/til_actual_price_fish_pricing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:hint="@string/hint_actual_price_fish_pricing"
+            app:hintTextColor="@color/blue_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_species_fish_pricing">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_actual_price_fish_pricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:maxLines="1"
+                android:textColor="@color/gray_light"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,VisualLintLongText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_catching_method_grade_fish_pricing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/til_actual_price_fish_pricing">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/blueDropDownInputLayoutMaterial3"
+                android:id="@+id/til_catching_method_fish_pricing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColorHint="@color/gray_dark">
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_catching_method_fish_pricing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="@string/hint_catching_method_fish_pricing"
+                    android:inputType="none"
+                    android:textColor="@color/gray_dark"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/blueDropDownInputLayoutMaterial3"
+                android:id="@+id/til_grade_fish_pricing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_grade_fish_pricing"
+                app:hintTextColor="@color/blue_500">
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_grade_fish_pricing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/value_grade_fish_pricing"
+                    android:textColor="@color/gray_dark"
+                    android:inputType="none"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/blueDropDownInputLayoutMaterial3"
+            android:id="@+id/til_sustainability_fish_pricing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/gray_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_catching_method_grade_fish_pricing">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_sustainability_fish_pricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/hint_sustainability_fish_pricing"
+                android:inputType="none"
+                android:textColor="@color/gray_dark"
+                tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/blueTextInputLayoutMaterial3"
+            android:id="@+id/til_weight_fish_pricing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/hint_weight_fish_pricing"
+            app:hintTextColor="@color/blue_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_sustainability_fish_pricing">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_weight_fish_pricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/gray_dark"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,VisualLintLongText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_predict"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="105dp"
+            android:layout_marginHorizontal="25dp"
+            android:contentDescription="@string/btn_predict_content_description"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_predict"
+            android:textColor="@color/off_white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/blue_500"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/ripple_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintButtonSize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

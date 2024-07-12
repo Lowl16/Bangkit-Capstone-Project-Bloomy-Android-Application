@@ -1,0 +1,132 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".ui.fragment.MarketFragment">
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="?attr/actionBarSize"
+        tools:ignore="UselessParent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_layout_market"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/material_tool_bar_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/blue_500"
+                    app:title="@string/title_market"
+                    app:titleMarginStart="25dp"
+                    app:titleTextColor="@color/off_white" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+                android:id="@+id/tv_title_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/tv_title_market"
+                android:textColor="@color/off_white"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/app_bar_layout_market"
+                tools:ignore="VisualLintOverlap" />
+
+            <ImageView
+                android:id="@+id/img_bottom_sheet_market"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/img_bottom_sheet_market"
+                android:src="@drawable/template_bottom_sheet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_market" />
+
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/search_bar_market"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/search_bar_market"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/img_bottom_sheet_market" />
+
+            <com.google.android.material.search.SearchView
+                android:id="@+id/search_view_market"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:hint="@string/search_bar_market"
+                app:layout_anchor="@id/search_bar_market"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_fresh_catch_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17.5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/tv_fresh_catch_market"
+                android:textColor="@color/gray_dark"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/search_bar_market"
+                app:layout_constraintTop_toBottomOf="@id/search_bar_market" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_fresh_catch_market"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingEnd="25dp"
+                android:paddingStart="10dp"
+                app:layout_constraintStart_toStartOf="@id/tv_fresh_catch_market"
+                app:layout_constraintTop_toBottomOf="@id/tv_fresh_catch_market" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_grade_market"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/tab_layout_grade_market"
+                android:tag="sticky"
+                app:tabBackground="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view_fresh_catch_market" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_grade_market"
+                android:layout_width="0dp"
+                android:layout_height="800dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout_grade_market" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

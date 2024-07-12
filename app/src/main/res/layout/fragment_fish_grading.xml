@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".ui.fragment.FishGradingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout_fish_grading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/material_tool_bar_fish_grading"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue_500"
+                app:title="@string/title_fish_grading"
+                app:titleMarginStart="25dp"
+                app:titleTextColor="@color/off_white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/tv_title_fish_grading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_title_fish_grading"
+            android:textColor="@color/off_white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar_layout_fish_grading" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_image_fish_grading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_fish_grading"
+            app:cardBackgroundColor="@color/off_white"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_choose_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/img_choose_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_add_image_product"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_choose_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/tv_choose_image"
+                    android:textColor="@color/blue_500"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_choose_image" />
+
+                <ImageView
+                    android:id="@+id/img_fish_grading"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clipToOutline="true"
+                    android:contentDescription="@string/img_fish_grading"
+                    android:scaleType="centerCrop"
+                    android:src="@color/off_white"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck"
+                    tools:targetApi="s" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/img_bottom_sheet_fish_grading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="115dp"
+            android:contentDescription="@string/img_bottom_sheet_fish_grading"
+            android:src="@drawable/template_bottom_sheet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_fish_grading" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_camera_fish_grading"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/btn_camera_content_description"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_camera"
+            android:textColor="@color/off_white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/blue_500"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/ripple_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view_image_fish_grading"
+            tools:ignore="VisualLintButtonSize" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_gallery_fish_grading"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:contentDescription="@string/btn_gallery_content_description"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_gallery"
+            android:textColor="@color/off_white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/blue_500"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/ripple_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_camera_fish_grading"
+            tools:ignore="VisualLintButtonSize" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_grade"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="105dp"
+            android:layout_marginHorizontal="25dp"
+            android:contentDescription="@string/btn_grade_content_description"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_grade"
+            android:textColor="@color/off_white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/blue_500"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/ripple_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintButtonSize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

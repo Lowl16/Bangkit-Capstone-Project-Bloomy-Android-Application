@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_product_shop_list"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/img_product_shop_list"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <ImageView
+            android:id="@+id/img_grade_product_shop_list"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/img_grade_product_shop_list"
+            android:src="@drawable/template_circle_blue"
+            app:layout_constraintStart_toEndOf="@id/img_product_shop_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_grade_product_shop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_grade_product_shop_list"
+            android:textColor="@color/off_white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_grade_product_shop_list"
+            app:layout_constraintEnd_toEndOf="@id/img_grade_product_shop_list"
+            app:layout_constraintStart_toStartOf="@id/img_grade_product_shop_list"
+            app:layout_constraintTop_toTopOf="@id/img_grade_product_shop_list"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_title_product_shop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_title_product_shop_list"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_grade_product_shop_list"
+            app:layout_constraintStart_toEndOf="@id/img_grade_product_shop_list"
+            app:layout_constraintTop_toTopOf="@id/img_grade_product_shop_list" />
+
+        <ImageView
+            android:id="@+id/img_favorite_product_shop_list"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/img_favorite_product_shop_list"
+            android:src="@drawable/icon_favorite_inactive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_price_product_shop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tv_price_product_shop_list"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/img_grade_product_shop_list"
+            app:layout_constraintTop_toBottomOf="@id/img_grade_product_shop_list" />
+
+        <ImageView
+            android:id="@+id/img_rating_product_shop_list"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="7.5dp"
+            android:contentDescription="@string/img_rating_product_shop_list"
+            android:src="@drawable/icon_rating"
+            app:layout_constraintStart_toStartOf="@id/tv_price_product_shop_list"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_product_shop_list"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_rating_product_shop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_rating_product_shop_list"
+            android:textColor="@color/gray_dark"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/img_rating_product_shop_list"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_product_shop_list" />
+
+        <ImageView
+            android:id="@+id/img_divider_product_shop_list"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/img_divider_product_shop_list"
+            android:src="@drawable/template_circle_black"
+            app:layout_constraintBottom_toBottomOf="@id/img_rating_product_shop_list"
+            app:layout_constraintStart_toEndOf="@id/tv_rating_product_shop_list"
+            app:layout_constraintTop_toTopOf="@id/img_rating_product_shop_list"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_sold_product_shop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tv_sold_product_shop_list"
+            android:textColor="@color/gray_dark"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@id/img_divider_product_shop_list"
+            app:layout_constraintTop_toTopOf="@id/tv_rating_product_shop_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

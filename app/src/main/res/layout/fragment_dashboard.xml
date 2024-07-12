@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".ui.fragment.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="?attr/actionBarSize"
+        tools:ignore="UselessParent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_hello_username_dashboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:text="@string/tv_hello_username"
+                android:textColor="@color/off_white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@id/img_profile_dashboard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_welcome_back_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/tv_welcome_back"
+                android:textColor="@color/off_white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="@id/tv_hello_username_dashboard"
+                app:layout_constraintTop_toBottomOf="@id/tv_hello_username_dashboard" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile_dashboard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="25dp"
+                android:src="@color/blue_500"
+                app:civ_border_color="@color/off_white"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_welcome_back_dashboard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_hello_username_dashboard" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_sail_decision_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_welcome_back_dashboard"
+                app:cardBackgroundColor="@color/off_white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/invalid_sail_decision"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="50dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="@string/invalid_sail_decision"
+                            android:textColor="@color/blue_500"
+                            android:textSize="20sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/invalid_description_sail_decision"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="50dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:text="@string/invalid_description_sail_decision"
+                            android:textColor="@color/blue_500"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_location_sail_decision"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="12.5dp"
+                        android:contentDescription="@string/img_location_sail_decision"
+                        android:src="@drawable/icon_location_blue"
+                        app:layout_constraintBottom_toTopOf="@id/tv_temperature_sail_decision"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_location_sail_decision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/default_n_a"
+                        android:textColor="@color/blue_500"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@id/tv_temperature_sail_decision"
+                        app:layout_constraintStart_toEndOf="@id/img_location_sail_decision"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TextContrastCheck"
+                        tools:text="@string/tv_location_sail_decision" />
+
+                    <TextView
+                        android:id="@+id/tv_outlook_sail_decision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/default_n_a"
+                        android:textColor="@color/blue_500"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@id/tv_temperature_sail_decision"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TextContrastCheck"
+                        tools:text="@string/tv_outlook_sail_decision" />
+
+                    <TextView
+                        android:id="@+id/tv_temperature_sail_decision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/default_n_a"
+                        android:textColor="@color/blue_500"
+                        android:textSize="44sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/card_view_humidity_sail_decision"
+                        app:layout_constraintStart_toStartOf="@id/img_location_sail_decision"
+                        app:layout_constraintTop_toBottomOf="@id/img_location_sail_decision"
+                        tools:text="@string/tv_temperature_sail_decision" />
+
+                    <ImageView
+                        android:id="@+id/img_outlook_sail_decision"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="@string/img_outlook_sail_decision"
+                        android:src="@color/off_white"
+                        app:layout_constraintEnd_toEndOf="@id/tv_outlook_sail_decision"
+                        app:layout_constraintTop_toBottomOf="@id/tv_outlook_sail_decision" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_humidity_sail_decision"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="@color/blue_50_extra_light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@id/tv_temperature_sail_decision"
+                        app:layout_constraintTop_toBottomOf="@id/tv_temperature_sail_decision"
+                        app:strokeColor="@color/blue_500">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_humidity_sail_decision"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="5dp"
+                                android:contentDescription="@string/img_humidity_sail_decision"
+                                android:src="@drawable/icon_humidity"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tv_humidity_sail_decision"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="7.5dp"
+                                android:layout_marginVertical="5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/default_n_a"
+                                android:textColor="@color/blue_500"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="@string/tv_humidity_sail_decision" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_wind_speed_sail_decision"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="@color/blue_50_extra_light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toStartOf="@id/card_view_wind_direction_sail_decision"
+                        app:layout_constraintStart_toEndOf="@id/card_view_humidity_sail_decision"
+                        app:layout_constraintTop_toBottomOf="@id/tv_temperature_sail_decision"
+                        app:strokeColor="@color/blue_500">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_wind_speed_sail_decision"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="5dp"
+                                android:contentDescription="@string/img_wind_speed_sail_decision"
+                                android:src="@drawable/icon_wind_speed"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:id="@+id/tv_wind_speed_sail_decision"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginEnd="7.5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/default_n_a"
+                                android:textColor="@color/blue_500"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="@string/tv_wind_speed_sail_decision" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_wind_direction_sail_decision"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="@color/blue_50_extra_light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="@id/img_outlook_sail_decision"
+                        app:layout_constraintTop_toBottomOf="@id/tv_temperature_sail_decision"
+                        app:strokeColor="@color/blue_500">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_wind_direction_sail_decision"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="5dp"
+                                android:contentDescription="@string/img_wind_direction_sail_decision"
+                                android:src="@drawable/icon_wind_direction"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tv_wind_direction_sail_decision"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginEnd="7.5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/default_n_a"
+                                android:textColor="@color/blue_500"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="@string/tv_wind_direction_sail_decision" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view_description_sail_decision"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.5dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardBackgroundColor="@color/blue_50_extra_light"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/card_view_wind_direction_sail_decision"
+                        app:layout_constraintStart_toStartOf="@id/card_view_humidity_sail_decision"
+                        app:layout_constraintTop_toBottomOf="@id/card_view_humidity_sail_decision"
+                        app:strokeColor="@color/blue_500">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_description_sail_decision"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/loading"
+                                android:textColor="@color/blue_500"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="TextContrastCheck"
+                                tools:text="@string/tv_description_sail_decision" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/img_bottom_sheet_dashboard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="115dp"
+                android:contentDescription="@string/img_bottom_sheet_dashboard"
+                android:src="@drawable/template_bottom_sheet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_welcome_back_dashboard" />
+
+            <TextView
+                android:id="@+id/tv_top_news_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/tv_top_news_dashboard"
+                android:textColor="@color/gray_dark"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/card_view_sail_decision_dashboard"
+                app:layout_constraintTop_toBottomOf="@id/card_view_sail_decision_dashboard" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_top_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingEnd="25dp"
+                android:paddingStart="0dp"
+                app:layout_constraintStart_toStartOf="@id/tv_top_news_dashboard"
+                app:layout_constraintTop_toBottomOf="@id/tv_top_news_dashboard" />
+
+            <TextView
+                android:id="@+id/tv_today_news_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/tv_today_news_dashboard"
+                android:textColor="@color/gray_dark"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/recycler_view_top_news"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view_top_news" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_today_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="10dp"
+                android:paddingBottom="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_today_news_dashboard"
+                app:layout_constraintTop_toBottomOf="@id/tv_today_news_dashboard" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

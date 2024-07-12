@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/button_home"
+        android:title="@string/home"
+        android:icon="@drawable/icon_home" />
+
+    <item
+        android:id="@+id/button_grading"
+        android:title="@string/grading"
+        android:icon="@drawable/icon_grading" />
+
+    <item
+        android:id="@+id/button_market"
+        android:title="@string/market"
+        android:icon="@drawable/icon_market" />
+
+    <item
+        android:id="@+id/button_pricing"
+        android:title="@string/pricing"
+        android:icon="@drawable/icon_pricing" />
+
+    <item
+        android:id="@+id/button_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/icon_profile" />
+
+</menu>

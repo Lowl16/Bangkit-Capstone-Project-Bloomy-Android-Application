@@ -1,0 +1,10 @@
+<TextView
+    android:id="@+id/tv_grade"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    android:fontFamily="@font/roboto_regular"
+    android:text="@string/value_grade_edit_product"
+    android:textColor="@color/gray_dark"
+    android:textSize="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

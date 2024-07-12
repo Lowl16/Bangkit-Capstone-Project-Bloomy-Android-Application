@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".ui.activity.HomeActivity">
+
+    <ImageView
+        android:id="@+id/img_background_home"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        android:contentDescription="@string/img_background_home"
+        android:src="@drawable/background_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_title_home"
+        android:textColor="@color/blue_500"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/tv_subtitle_home"
+        android:textColor="@color/blue_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_home" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_get_started_home"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/btn_get_started_home"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/blue_500"
+        app:cornerRadius="10dp"
+        app:rippleColor="@color/ripple_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

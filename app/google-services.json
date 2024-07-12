@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "91409174558",
+    "project_id": "bloomy-ch2ps086",
+    "storage_bucket": "bloomy-ch2ps086.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91409174558:android:e37f5a62cd298cffca5e0f",
+        "android_client_info": {
+          "package_name": "com.capstone.bloomy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjQmKk5qiHfS6GE_7O9RaB6XqGSdt0QX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
